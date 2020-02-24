@@ -7,3 +7,4 @@ class Sysl < Formula
   def install
     bin.install "sysl"
   end
+end
