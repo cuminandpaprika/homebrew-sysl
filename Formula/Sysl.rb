@@ -2,16 +2,16 @@
 class Sysl < Formula
   desc "Sysl is a tool which generates code and documentation from system specifications"
   homepage "https://sysl.io/"
-  version "0.12.0"
+  version "0.23.1"
   bottle :unneeded
 
   if OS.mac?
-    url "http://github.com/cuminandpaprika/sysl/releases/v0.12.0/sysl_0.12.0_macOS-64bit.tar.gz", :using => CurlDownloadStrategy
-    sha256 "7f80f75eb4133b557e836388cb49065bf01446d352077eb30da1f7e6a5eed0fa"
+    url "https://github.com/cuminandpaprika/sysl/releases/download/v0.23.1/sysl_0.23.1_macOS-64bit.tar.gz", :using => CurlDownloadStrategy
+    sha256 "38f109a844d319027e10401c0edf524159d73c0b48a9e4d30d6ca0030f8368ee"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "http://github.com/cuminandpaprika/sysl/releases/v0.12.0/sysl_0.12.0_Linux-64bit.tar.gz", :using => CurlDownloadStrategy
-      sha256 "79d82e11e77161d97574254f52231bb9e15fd6759f4466906fb732ceff9fbd6f"
+      url "https://github.com/cuminandpaprika/sysl/releases/download/v0.23.1/sysl_0.23.1_Linux-64bit.tar.gz", :using => CurlDownloadStrategy
+      sha256 "70a8afe5c4ff84b6dc46a15952dfd34fe6feae47e4c2b67aa36662c24725a9ca"
     end
   end
   
